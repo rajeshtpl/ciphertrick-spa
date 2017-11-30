@@ -1,0 +1,18 @@
+<h1>{{welcome}}</h1>
+<p>Create New Entry</p>
+<table class="table">
+    <tr>
+        <th>#</th>
+        <th>Year</th>
+        <th>Category</th> 
+        <th>Setting Name</th>
+        <th>Value</th>
+    </tr>
+    <tr *ngFor="let ratesetting of rateSettings; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{ratesetting.Year}}</td>
+        <td>{{ratesetting.Category | uppercase}}</td>
+        <td>{{ratesetting.SettingName}}</td>
+        <td>{{ratesetting.Value}}</td>
+    </tr>
+</table>
